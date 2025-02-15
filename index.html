@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="odin">
+            <div class="odin-logo-text">
+                <img src="images/odin-lined.png" alt="" class="odin-img">
+                <p class="odin-text">ODIN</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header-text">This is not a real online service!
+                You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            <p></p>
+            You <em>know</em> you want to.</div>
+            <div class="form-div">
+                <form>
+                    <div class="form-header">
+                        Let's do this!
+                    </div>
+                    <div class="rows">                        
+                        <div class="form-row">
+                            <div class="form-block">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="last-name" required pattern="[a-zA-Z]+">
+                            </div>
+                            <div class="form-block">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" required pattern="[a-zA-Z]+">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-block">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="text" id="phone-number" placeholder="+XXXXXXXXXXXX" required pattern="\+\d{12}">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-block">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" required minlength="6" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}">
+                                <span></span>
+                            </div>
+                            <div class="form-block">
+                                <label for="conf-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="conf-password" required>
+                                <span></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <button type="submit" id="btn">Create Account</button>  
+                </form>
+            </div>
+            <div class="footer">
+                Already have an account? <span class="login">Log in</span>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>  
+</body>
+</html>

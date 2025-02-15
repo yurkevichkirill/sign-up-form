@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "chunkFivePrint";
+    src:
+        url("fontie-package/ChunkFivePrint.woff2"),
+        url("fontie-package/ChunkFivePrint.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "norsBoldWebfont";
+    src:
+        url("fontie-package/norse-bold-webfont.woff2"),
+        url("fontie-package/norse-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: rgb(248, 251, 255);
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;    
+}
+
+.odin{
+    background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    height: 110%;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-width: 60%;
+}
+
+.header-text, .form-header{
+    margin-left: 40px;
+    font-family: 'chunkFivePrint';
+    font-size: 32px;
+}
+
+.header-text{
+    margin-top: 200px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+}
+
+form{
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+button{
+    margin-left: 40px;
+    width: 300px;
+    height: 48px;
+    border: none;
+    background-color: #596D48;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    bottom: -92px;
+}
+
+.odin-logo-text{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    justify-content: center;
+    margin-top: 31%;
+}
+.odin-text{
+    font-family: "norsBoldWebfont";
+    color: white;
+    font-size: 116px;
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.odin-img{
+    width: 100px;
+    height: auto;
+}
+
+.form-header{
+    padding-top: 20px;
+}
+
+.rows{
+    margin-left: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-row{
+    display: flex;
+    gap: 60px;
+}
+
+.form-block{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input{
+    width: 400px;
+    height: 32px;
+    border: solid 2px #E5E7EB;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.footer{
+    margin-left: 40px;
+    margin-top: 132px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login{
+    color: #596D48;
+}
+
+input[type="password"]:invalid{
+    border: red solid 2px;
+}
+
+input + span{
+    position: relative;
+}
+
+input[id="password"]:invalid + span::before{
+    content: "Password must include at least one lower, upper -case and number";
+    color: rgba(255, 0, 0,0.5);
+}
+
+input[class="pass-comp"] + span:before{
+    content: "Passwords don't match";
+    color: rgba(255, 0, 0,0.5);
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus{
+    border: rgb(0, 132, 255) solid 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
